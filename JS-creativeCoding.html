@@ -24,15 +24,18 @@
     context.strokeStyle = 'black'; // Set border color (black in this case)
     //context.strokeRect(100, 100, 400, 400); // Use strokeRect to outline the rectangle
 
-    for (i=0; i<5; i++) {
-        let width = 60;
-        let height = 60;
-        let gap = 20;
-        let x = 100 + (width + gap)*i;
-        let y = 100;
-        context.beginPath();
-        context.rect(x, y, width, height);
-        context.stroke();
+    for (i=0; i<5; i++) {       //nested loop
+        for (j=0; j<5; j++) {
+      
+            let width = 60;
+            let height = 60;
+            let gap = 20;
+            let x = 100 + (width + gap)*i;
+            let y = 100 + (height + gap)*j;
+            context.beginPath();
+            context.rect(x, y, width, height);
+            context.stroke();
+        }
     }
 
 </script>
