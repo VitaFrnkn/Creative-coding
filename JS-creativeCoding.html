@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
     <h1>D3ad Pixel</h1>
-
-    <canvas width="600" height="600"> </canvas>
+    <div class="drawing-space">
+        <canvas width="1400" height="600"> </canvas>
+    </div>
 </body>
 <script>
     let canvas = document.querySelector('canvas');
@@ -28,7 +30,7 @@
     const height = 60;
     const gap = 20;
     let x,y;
-    for (i=0; i<5; i++) {       //nested loop
+    for (i=0; i<16; i++) {       //nested loop
         for (j=0; j<5; j++) {
             let x = 100 + (width + gap)*i;
             let y = 100 + (height + gap)*j;
@@ -44,8 +46,6 @@
             }
         }
     }
-
-    
 
 </script>
     

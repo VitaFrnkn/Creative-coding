@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    padding:0;
+}
+.drawing-space{
+    width: 80%; /* Canvas takes up 80% of the screen width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Limit the max width */
+    max-height: 600px; /* Limit the max height */
+}
