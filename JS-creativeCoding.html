@@ -22,16 +22,16 @@
     // If you want a border (stroke) around the rectangle:
     context.lineWidth = 4;
     context.strokeStyle = 'black'; // Set border color (black in this case)
-    context.strokeRect(100, 100, 400, 400); // Use strokeRect to outline the rectangle
+    //context.strokeRect(100, 100, 400, 400); // Use strokeRect to outline the rectangle
 
-    for (i=0;i=5;i++){
+    for (i=0; i<5; i++) {
         let width = 60;
         let height = 60;
         let gap = 20;
-        let x = 100 + (width+gap);
+        let x = 100 + (width + gap)*i;
         let y = 100;
         context.beginPath();
-        context.rect(x,y,width,height);
+        context.rect(x, y, width, height);
         context.stroke();
     }
 
