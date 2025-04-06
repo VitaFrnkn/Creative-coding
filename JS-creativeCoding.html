@@ -6,10 +6,24 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>D3ad Pixel</h1>
+
     <canvas width="600" height="600"> </canvas>
 </body>
 <script>
+    let canvas = document.querySelector('canvas');
+    let context = canvas.getContext('2d');
+    // Set the fill color for the rectangle
+    context.fillStyle = 'purple';
 
-</script>    
+    // Draw the filled rectangle
+    //context.fillRect(100, 100, 400, 400);
+
+    // If you want a border (stroke) around the rectangle:
+    context.lineWidth = 4;
+    context.strokeStyle = 'black'; // Set border color (black in this case)
+    context.strokeRect(100, 100, 400, 400); // Use strokeRect to outline the rectangle
+
+</script>
     
 </html>
